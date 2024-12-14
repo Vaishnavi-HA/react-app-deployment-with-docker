@@ -10,7 +10,7 @@ pipeline {
 
         stage ('executing the file') {
             steps {
-                sh './build.sh'
+                sh 'sudo ./build.sh'
             }
         }
     }
