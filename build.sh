@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #login into DockerHub:
-docker login -u $DOCKER_USERNAME -p $DOCKER_PASS
+docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_PASSWORD }} registry.hub.docker.com
 
 #stopping existing container:
 docker stop react
